@@ -49,7 +49,7 @@ $(document).ready(function() {
         var inputtedCity = $(this).find("input.new-city").val();
         var inputtedCounty = $(this).find("input.new-county").val();
         var newAddress = new Address(inputtedStreet, inputtedCity, inputtedCounty)
-        newContact.addresses.push(newAddress)
+        newContact.address.push(newAddress)
 
     });
     
