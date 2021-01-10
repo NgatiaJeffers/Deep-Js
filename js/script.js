@@ -208,3 +208,29 @@ jeff.addresses.push(home);
 console.log(jeff.addresses[0].street);
 console.log(jeff.addresses[0].city);
 console.log(jeff.addresses[0].county);
+
+
+
+
+// Prototypes
+function Particle() {
+    this.x = 100;
+    this.y = 99;
+    // this.show = function() {
+    //     point(this.x, this.y);
+    // }
+}
+
+Particle.prototype.show(){
+    PointerEvent(this.x, this.y)
+}
+
+var p;
+
+function setup() {
+    createCanvas(600, 300);
+    p = new Particle()
+}
+
+
+// Aclosure
